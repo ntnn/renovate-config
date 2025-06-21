@@ -24,7 +24,7 @@
         "/^.bingo\/[[:alnum:]]+\.mod$/"
       ],
       "matchStrings": [
-        "^require (?<depName>.+) (?<currentValue>[[:alnum:].-]*) \/\/ .*$"
+        "/^require (?<depName>.+) (?<currentValue>.*) \/\/.*$/"
       ],
       "datasourceTemplate": "golang"
     }
