@@ -21,7 +21,7 @@
       "customType": "regex",
       "description": "bingo dependencies",
       "managerFilePatterns": [
-        "/^.bingo\/[[:alnum:]]+\.mod$/"
+        "/^.bingo\/[[:alnum:]-]+\.mod$/"
       ],
       "matchStrings": [
         "/^require (?<depName>.+) (?<currentValue>.*) \/\/.*$/"
