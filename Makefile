@@ -1,4 +1,7 @@
+docker ?= docker
+image ?= ghcr.io/renovatebot/renovate:full
+
 .PHONY: check
 check:
-	docker pull ghcr.io/renovatebot/renovate:full
-	docker run -it --rm -v .:/workdir ghcr.io/renovatebot/renovate:full renovate-config-validator /workdir/default.json
+	$(docker) pull $(image)
+	$(docker) run --rm -v .:/workdir $(image) renovate-config-validator /workdir/default.json
