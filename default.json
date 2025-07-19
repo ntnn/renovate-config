@@ -9,7 +9,7 @@
     ":prConcurrentLimitNone",
     ":label(renovate)",
     ":enableVulnerabilityAlertsWithLabel(security)",
-    ":dependencyDashboard",
+    ":disableDependencyDashboard",
     ":semanticCommits"
   ],
   "pinDigests": true,
