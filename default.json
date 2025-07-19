@@ -15,18 +15,5 @@
   "pinDigests": true,
   "lockFileMaintenance": {
     "enabled": true
-  },
-  "customManagers": [
-    {
-      "customType": "regex",
-      "description": "bingo dependencies",
-      "managerFilePatterns": [
-        "/^.bingo\/[[:alnum:]-]+\.mod$/"
-      ],
-      "matchStrings": [
-        "require (?<depName>.+) (?<currentValue>.*) \/\/"
-      ],
-      "datasourceTemplate": "go"
-    }
-  ]
+  }
 }

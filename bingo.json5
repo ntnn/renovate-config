@@ -1,0 +1,17 @@
+{
+  // Import with github>ntnn/renovate-config:bingo.json5
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "bingo dependencies",
+      "managerFilePatterns": [
+        "/^.bingo\/[[:alnum:]-]+\.mod$/"
+      ],
+      "matchStrings": [
+        "require (?<depName>.+) (?<currentValue>.*) \/\/"
+      ],
+      "datasourceTemplate": "go"
+    }
+  ]
+}
