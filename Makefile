@@ -1,5 +1,5 @@
 docker ?= docker
-image ?= ghcr.io/renovatebot/renovate:full
+image ?= ghcr.io/renovatebot/renovate:latest
 
 configs ?= $(wildcard *.json *.json5 *.jsonc)
 
