@@ -10,7 +10,8 @@
     ":label(renovate)",
     ":enableVulnerabilityAlertsWithLabel(security)",
     ":disableDependencyDashboard",
-    ":semanticCommits"
+    ":semanticCommits",
+    ":automergeMinor"
   ],
   "pinDigests": true,
   "lockFileMaintenance": {
