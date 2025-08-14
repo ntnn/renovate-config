@@ -16,5 +16,13 @@
   "pinDigests": true,
   "lockFileMaintenance": {
     "enabled": true
-  }
+  },
+  "postUpdateOptions": [
+      "gomodTidy",
+      "gomodUpdateImports",
+      "helmUpdateSubChartArchives",
+      "kustomizeInflateHelmCharts",
+      "npmDedupe",
+      "yarnDedupeFewer"
+  ]
 }
