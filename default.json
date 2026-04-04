@@ -24,5 +24,16 @@
       "kustomizeInflateHelmCharts",
       "npmDedupe",
       "yarnDedupeFewer"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "bump golangci-lint in Makefile",
+      "fileMatch": ["^Makefile$"],
+      "matchStrings": ["GOLANGCI_LINT_VERSION\\s*[?:]?=\\s*v?(?<currentValue>\\S+)"],
+      "depNameTemplate": "golangci/golangci-lint",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.*)$"
+    }
   ]
 }
