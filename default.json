@@ -11,7 +11,8 @@
     ":enableVulnerabilityAlertsWithLabel(security)",
     ":disableDependencyDashboard",
     ":semanticCommits",
-    ":automergeMinor"
+    ":automergeMinor",
+    ":automergeDigest"
   ],
   "pinDigests": true,
   "lockFileMaintenance": {
