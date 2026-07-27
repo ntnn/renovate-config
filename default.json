@@ -12,7 +12,8 @@
     ":disableDependencyDashboard",
     ":semanticCommits",
     ":automergeMinor",
-    ":automergeDigest"
+    ":automergeDigest",
+    ":automergeMajor"
   ],
   "pinDigests": true,
   "lockFileMaintenance": {
